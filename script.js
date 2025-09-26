@@ -16,6 +16,9 @@ form.addEventListener("submit", function (e) {
 
     isFormValid = isUsernameValid && isEmailValid && isPasswordValid && isPasswordsMatch;
   }
+  else{
+        checkPasswordsMatch(password, confirmPassword);
+  } 
 
   if (isFormValid) {
     setTimeout(() => {
